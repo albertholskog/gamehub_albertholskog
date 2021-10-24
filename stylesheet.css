@@ -1,8 +1,37 @@
 body {
   background-color: aqua;
-}
-
-body {
   font-family: "Urbanist", sans-serif;
 }
 
+.logo {
+  max-width: 100%;
+  height: auto;
+}
+
+#container {
+  width: 960px;
+  max-width: 100%;
+  padding: 20px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.main-nav ul {
+  margin: 1em 0 0.5em;
+  text-align: center;
+}
+.main-nav li {
+  display: inline;
+}
+.logo {
+  display: inline-block;
+  padding: 0.5em 1.5em;
+}
