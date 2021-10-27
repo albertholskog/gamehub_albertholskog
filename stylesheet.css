@@ -165,10 +165,15 @@ footer {
         display: block;
     }
     .li-list{
-        display: none;
+        display: block;
     }
-    input:checked ~ .li-list {
-        display: inline-block;
+
+    .container-nav{
+        display:none;
+    }
+
+    input:checked ~ .container-nav {
+        display: block;
     }
     
 
