@@ -27,7 +27,7 @@ header img {
 
 .searchbar {
     display: flex;
-    flex-wrap: wrap;
+
     flex-direction: column-reverse;
     width: 20vw;
     padding-right: 20px;
@@ -103,6 +103,7 @@ h1 {
 }
 .flex-wrapper {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     margin: 5vh 0 10vh 0;
 }
@@ -156,35 +157,63 @@ footer {
     margin: 1.5rem;
 }
 @media only screen and (max-width: 600px) {
+    /* header */
     header img {
-        height: 5vh;
+        height: 40px;
         width: auto;
     }
 
+    .fa-user,
+    .fa-shopping-cart {
+        font-size: 1.2rem;
+        margin: 1rem;
+        padding: 0rem;
+    }
+    .icon {
+        flex-direction: row;
+    }
+
+    /* hamburger-menu */
     .label {
         display: block;
     }
-    .li-list{
+    .li-list {
+        display: block;
+    }
+
+    .container-nav {
         display: none;
     }
-    input:checked ~ .li-list {
-        display: inline-block;
+
+    input:checked ~ .container-nav {
+        display: block;
     }
-    
+    .fa-bars {
+        font-size: 2rem;
+        padding: 0 0 1rem 2rem;
+    }
 
+    /* gamecover */
 
+    .gameheading {
+        margin: 1rem 0;
 
+        justify-content: space-evenly;
+    }
+    h1 {
+        font-size: 1.5rem;
+        padding: 2rem 0 0 0;
+    }
+    .gameheading p {
+        font-size: 1rem;
+        padding: 4rem 0 0 0;
+    }
+    .card {
+        margin-bottom: 5vh;
+    }
 
-
-
-
-
-
-
-
-
-
-
-
+    .flex-wrapper {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
 }
-
