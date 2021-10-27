@@ -9,6 +9,12 @@ body {
     background-color: #eeeeee;
 }
 /* header */
+#hamburger-menu {
+    display: none;
+}
+label {
+    display: none;
+}
 header > div {
     display: flex;
     flex-direction: row;
@@ -50,7 +56,7 @@ header img {
     width: 14px;
 }
 
-#container-nav {
+.container-nav {
     display: flex;
     align-items: center;
     justify-content: end;
@@ -132,22 +138,53 @@ footer {
     background-color: #989898;
     width: 100%;
     height: 10%;
+}
+.contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.contact div {
+    padding-top: 2rem;
+    font-size: 1rem;
+}
+.contact div:last-child {
+    margin: 0 3rem 0 0;
+}
+.contact img {
+    margin: 1.5rem;
+}
+@media only screen and (max-width: 600px) {
+    header img {
+        height: 5vh;
+        width: auto;
+    }
+
+    .label {
+        display: block;
+    }
+    .li-list{
+        display: none;
+    }
+    input:checked ~ .li-list {
+        display: inline-block;
+    }
     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
-.contact{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-.contact div{
-  padding-top: 30px;
-  font-size: 1.25rem;
-  
-}
-.contact div:last-child{
-  margin: 0 3rem 0 0;
-}
-.contact img{
-  margin-left: 2rem;
-}
+
