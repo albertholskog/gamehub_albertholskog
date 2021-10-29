@@ -1,0 +1,18 @@
+
+#gamelist-grid {
+        display: grid;
+        width: 100%;
+        height: 100vh;
+        grid-template-areas: 
+        'header header header'
+        'banner banner banner'
+        'aside main main'
+        'aside main main'
+        'footer footer footer';
+        }
+        
+        .header-gamelist { grid-area: header; }
+        .banner-gamelist { grid-area: banner; background: blueviolet;}
+        .aside-gamelist { grid-area: aside; background: brown;}
+        .main-gamelist { grid-area: main; background: chartreuse;}
+        .footer-gamelist { grid-area: footer; background: cyan;}
